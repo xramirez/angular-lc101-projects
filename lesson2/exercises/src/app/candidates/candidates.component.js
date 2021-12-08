@@ -22,6 +22,17 @@ let CandidatesComponent = class CandidatesComponent {
     }
     ngOnInit() {
     }
+    // Code the addToCrew function here:
+    addToCrew(newMember) {
+        if (!this.crew.includes(newMember)) {
+            this.crew.push(newMember);
+            console.log(this.crew);
+        }
+    }
+    // BONUS: Code the changeMissionName function here:
+    changeMissionName(newName) {
+        this.missionName = newName;
+    }
 };
 CandidatesComponent = __decorate([
     (0, core_1.Component)({
